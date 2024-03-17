@@ -1,0 +1,12 @@
+{
+  "name": "test-lo-shared",
+  "version": "0.0.0",
+  "main": "build/index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prettier:write": "prettier ./src --write"
+  },
+  "dependencies": {}
+}
