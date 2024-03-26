@@ -1,6 +1,7 @@
 import z from "zod";
 import { ListDataset } from "./core";
 export declare const createProductReqBodyDtoShema: z.ZodObject<{
+    published: z.ZodBoolean;
     name: z.ZodString;
     description: z.ZodString;
     basePrice: z.ZodNumber;
@@ -26,6 +27,7 @@ export declare const createProductReqBodyDtoShema: z.ZodObject<{
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     name: string;
+    published: boolean;
     description: string;
     basePrice: number;
     attributes: {
@@ -38,6 +40,7 @@ export declare const createProductReqBodyDtoShema: z.ZodObject<{
     }[];
 }, {
     name: string;
+    published: boolean;
     description: string;
     basePrice: number;
     attributes: {
@@ -51,6 +54,7 @@ export declare const createProductReqBodyDtoShema: z.ZodObject<{
 }>;
 export declare const updateProductReqBodyDtoShema: z.ZodObject<{
     productId: z.ZodString;
+    published: z.ZodBoolean;
     name: z.ZodString;
     description: z.ZodString;
     basePrice: z.ZodNumber;
@@ -76,6 +80,7 @@ export declare const updateProductReqBodyDtoShema: z.ZodObject<{
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     name: string;
+    published: boolean;
     description: string;
     basePrice: number;
     attributes: {
@@ -89,6 +94,7 @@ export declare const updateProductReqBodyDtoShema: z.ZodObject<{
     productId: string;
 }, {
     name: string;
+    published: boolean;
     description: string;
     basePrice: number;
     attributes: {
