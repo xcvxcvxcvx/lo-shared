@@ -8,8 +8,8 @@
     "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "zod": "^3.22.4",
-    "typescript": "^5.3.3"
+    "test-lo-shared": "github:xcvxcvxcvx/lo-shared",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",

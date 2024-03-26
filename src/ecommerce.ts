@@ -12,6 +12,7 @@ const filesSchema = z.object({
 });
 
 export const createProductReqBodyDtoShema = z.object({
+  published: z.boolean(),
   name: z.string(),
   description: z.string(),
   basePrice: z.number(),
@@ -22,6 +23,7 @@ export const createProductReqBodyDtoShema = z.object({
 
 export const updateProductReqBodyDtoShema = z.object({
   productId: z.string(),
+  published: z.boolean(),
   name: z.string(),
   description: z.string(),
   basePrice: z.number(),
