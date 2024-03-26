@@ -44,6 +44,7 @@ export type UpdateProductDto = z.infer<typeof updateProductReqBodyDtoShema>;
 
 export type GetProductDto = {
   productId: string;
+  published: boolean,
   name: string;
   description: string;
   basePrice: number;

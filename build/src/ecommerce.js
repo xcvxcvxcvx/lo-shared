@@ -14,6 +14,7 @@ const filesSchema = zod_1.default.object({
     url: zod_1.default.string(),
 });
 exports.createProductReqBodyDtoShema = zod_1.default.object({
+    published: zod_1.default.boolean(),
     name: zod_1.default.string(),
     description: zod_1.default.string(),
     basePrice: zod_1.default.number(),
@@ -22,6 +23,7 @@ exports.createProductReqBodyDtoShema = zod_1.default.object({
 });
 exports.updateProductReqBodyDtoShema = zod_1.default.object({
     productId: zod_1.default.string(),
+    published: zod_1.default.boolean(),
     name: zod_1.default.string(),
     description: zod_1.default.string(),
     basePrice: zod_1.default.number(),
